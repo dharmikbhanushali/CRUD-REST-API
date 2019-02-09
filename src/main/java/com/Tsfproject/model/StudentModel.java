@@ -11,7 +11,7 @@ public class StudentModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private long id;
 	
 	@Column(name = "Name")
 	private String name;
@@ -21,17 +21,17 @@ public class StudentModel {
 		
 	}
 	
-	public StudentModel(int id, String name) {
+	public StudentModel(long id, String name) {
 			this.id = id;
 			this.name = name;
 		
 		}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}	
 
@@ -41,6 +41,16 @@ public class StudentModel {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public static Object notFound() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static Object noContent() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
