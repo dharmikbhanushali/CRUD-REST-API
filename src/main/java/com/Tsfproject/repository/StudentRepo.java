@@ -8,7 +8,7 @@ import com.Tsfproject.model.StudentModel;
 @Repository
 public interface StudentRepo extends JpaRepository<StudentModel, Long>{
 
-	void deleteById(int id);
+	
 	
 	
 }
